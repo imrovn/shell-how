@@ -1,0 +1,39 @@
+{
+  "name": "shell-how",
+  "version": "0.0.1",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist --target bun",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/bun": "^1.2.12",
+    "@types/inquirer": "^9.0.8",
+    "@types/node": "^22.15.14",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@azure/openai": "^2.0.0",
+    "clipboardy": "^4.0.0",
+    "commander": "^13.1.0",
+    "dotenv": "^16.5.0",
+    "inquirer": "^12.6.0",
+    "openai": "^4.97.0",
+    "ora": "^8.2.0",
+    "zod": "^3.24.4"
+  }
+}
